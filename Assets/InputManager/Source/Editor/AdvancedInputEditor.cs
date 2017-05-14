@@ -521,6 +521,10 @@ namespace TeamUtilityEditor.IO
             _inputManager.playerTwoDefault = string.Empty;
             _inputManager.playerThreeDefault = string.Empty;
             _inputManager.playerFourDefault = string.Empty;
+            _inputManager.playerFiveDefault = string.Empty;
+            _inputManager.playerSixDefault = string.Empty;
+            _inputManager.playerSevenDefault = string.Empty;
+            _inputManager.playerEightDefault = string.Empty;
             _selectionPath.Clear();
 			if(_searchString.Length > 0)
 			{
@@ -906,6 +910,26 @@ namespace TeamUtilityEditor.IO
             if (GUILayout.Button("Make Player Four Default", GUILayout.Width(200.0f), GUILayout.Height(25.0f)))
             {
                 _inputManager.playerFourDefault = inputConfig.name;
+            }
+
+            GUI.enabled = (!EditorApplication.isPlaying && _inputManager.playerFiveDefault != inputConfig.name);
+            if (GUILayout.Button("Make Player Five Default", GUILayout.Width(200.0f), GUILayout.Height(25.0f))) {
+                _inputManager.playerFiveDefault = inputConfig.name;
+            }
+
+            GUI.enabled = (!EditorApplication.isPlaying && _inputManager.playerSixDefault != inputConfig.name);
+            if (GUILayout.Button("Make Player Six Default", GUILayout.Width(200.0f), GUILayout.Height(25.0f))) {
+                _inputManager.playerSixDefault = inputConfig.name;
+            }
+
+            GUI.enabled = (!EditorApplication.isPlaying && _inputManager.playerSevenDefault != inputConfig.name);
+            if (GUILayout.Button("Make Player Seven Default", GUILayout.Width(200.0f), GUILayout.Height(25.0f))) {
+                _inputManager.playerSevenDefault = inputConfig.name;
+            }
+
+            GUI.enabled = (!EditorApplication.isPlaying && _inputManager.playerEightDefault != inputConfig.name);
+            if (GUILayout.Button("Make Player Eight Default", GUILayout.Width(200.0f), GUILayout.Height(25.0f))) {
+                _inputManager.playerEightDefault = inputConfig.name;
             }
 
             //GUI.enabled = (EditorApplication.isPlaying && _InputManager.PlayerOneConfiguration.name != inputConfig.name);

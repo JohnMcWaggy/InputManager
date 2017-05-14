@@ -75,6 +75,10 @@ namespace TeamUtility.IO
                 parameters.playerTwoDefault = string.Empty;
                 parameters.playerThreeDefault = string.Empty;
                 parameters.playerFourDefault = string.Empty;
+			    parameters.playerFiveDefault = string.Empty;
+			    parameters.playerSixDefault = string.Empty;
+			    parameters.playerSevenDefault = string.Empty;
+			    parameters.playerEightDefault = string.Empty;
                 while (reader.Read())
 				{
 					if(reader.IsStartElement("Input"))
@@ -83,6 +87,10 @@ namespace TeamUtility.IO
                         parameters.playerTwoDefault = reader["playerTwoDefault"];
                         parameters.playerThreeDefault = reader["playerThreeDefault"];
                         parameters.playerFourDefault = reader["playerFourDefault"];
+                        parameters.playerFiveDefault = reader["playerFiveDefault"];
+                        parameters.playerSixDefault = reader["playerSixDefault"];
+                        parameters.playerSevenDefault = reader["playerSevenDefault"];
+                        parameters.playerEightDefault = reader["playerEightDefault"];
                     }
 					else if(reader.IsStartElement("InputConfiguration"))
 					{

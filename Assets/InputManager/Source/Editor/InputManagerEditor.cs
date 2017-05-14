@@ -40,6 +40,10 @@ namespace TeamUtilityEditor.IO
         private SerializedProperty _playerTwoDefault;
         private SerializedProperty _playerThreeDefault;
         private SerializedProperty _playerFourDefault;
+        private SerializedProperty _playerFiveDefault;
+        private SerializedProperty _playerSixDefault;
+        private SerializedProperty _playerSevenDefault;
+        private SerializedProperty _playerEightDefault;
         private GUIContent _gravityInfo = new GUIContent("Gravity", "The speed(in units/sec) at which a digital axis falls towards neutral.");
 		private GUIContent _sensitivityInfo = new GUIContent("Sensitivity", "The speed(in units/sec) at which an axis moves towards the target value.");
 		private GUIContent _snapInfo = new GUIContent("Snap", "If input switches direction, do we snap to neutral and continue from there? For digital axes only.");
@@ -66,6 +70,10 @@ namespace TeamUtilityEditor.IO
             _playerTwoDefault = serializedObject.FindProperty("playerTwoDefault");
             _playerThreeDefault = serializedObject.FindProperty("playerThreeDefault");
             _playerFourDefault = serializedObject.FindProperty("playerFourDefault");
+            _playerFiveDefault = serializedObject.FindProperty("playerFiveDefault");
+            _playerSixDefault = serializedObject.FindProperty("playerSixDefault");
+            _playerSevenDefault = serializedObject.FindProperty("playerSevenDefault");
+            _playerEightDefault = serializedObject.FindProperty("playerEightDefault");
         }
 		
 		public override void OnInspectorGUI()
@@ -99,6 +107,10 @@ namespace TeamUtilityEditor.IO
             EditorGUILayout.PropertyField(_playerTwoDefault);
             EditorGUILayout.PropertyField(_playerThreeDefault);
             EditorGUILayout.PropertyField(_playerFourDefault);
+            EditorGUILayout.PropertyField(_playerFiveDefault);
+            EditorGUILayout.PropertyField(_playerSixDefault);
+            EditorGUILayout.PropertyField(_playerSevenDefault);
+            EditorGUILayout.PropertyField(_playerEightDefault);
             EditorGUILayout.PropertyField(_dontDestroyOnLoad);
 			EditorGUILayout.PropertyField(_ignoreTimescale);
 			EditorGUILayout.PropertyField(_intputConfigurations);

@@ -9,5 +9,9 @@ namespace TeamUtility.IO
         public string playerTwoDefault;
         public string playerThreeDefault;
         public string playerFourDefault;
+        public string playerFiveDefault;
+        public string playerSixDefault;
+        public string playerSevenDefault;
+        public string playerEightDefault;
     }
 }

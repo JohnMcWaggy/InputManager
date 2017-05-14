@@ -79,6 +79,10 @@ namespace TeamUtility.IO
                 writer.WriteAttributeString("playerTwoDefault", parameters.playerTwoDefault);
                 writer.WriteAttributeString("playerThreeDefault", parameters.playerThreeDefault);
                 writer.WriteAttributeString("playerFourDefault", parameters.playerFourDefault);
+                writer.WriteAttributeString("playerFiveDefault", parameters.playerFiveDefault);
+                writer.WriteAttributeString("playerSixDefault", parameters.playerSixDefault);
+                writer.WriteAttributeString("playerSevenDefault", parameters.playerSevenDefault);
+                writer.WriteAttributeString("playerEightDefault", parameters.playerEightDefault);
                 foreach (InputConfiguration inputConfig in parameters.inputConfigurations)
 				{
 					WriteInputConfiguration(inputConfig, writer);
